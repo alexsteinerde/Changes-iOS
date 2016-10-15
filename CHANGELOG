@@ -33,3 +33,12 @@ Version 1.0 (6)
 - Added parsing buildings
 - Added fetching images for buildings
 - Added showing buildings on map and in detail view
+
+Version 1.0 (7)
+- Improved plate image
+- Added app icon
+- Improved performance of map
+- Improved selection and deselection style of markers
+- Added directly zooming to users location
+- Added loading data for bounding box of map view
+- Added limit for Stolpersteine request

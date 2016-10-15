@@ -19,7 +19,7 @@ class DatasetAPI {
             guard let JSON = response.result.value as? Dictionary<String, Any>, let answer = JSON["answer"] as? Array<Dictionary<String, Any>> else { return completion([]) }
             var datasets = Array<Dataset>()
             for data in answer {
-                if data["type"] as? String == "plate" {
+                if data["type"] as? String == "plate" && datasets.count < 400 {
                     if let plate = Plate(data: data) {
                         datasets.append(plate)
                     }
