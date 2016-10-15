@@ -19,6 +19,8 @@
 		FA1C74461DB21F5D0079C7B1 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C74451DB21F5D0079C7B1 /* Dataset.swift */; };
 		FA1C74481DB220890079C7B1 /* Plate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C74471DB220880079C7B1 /* Plate.swift */; };
 		FA1C744A1DB222BB0079C7B1 /* DatasetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C74491DB222BB0079C7B1 /* DatasetAPI.swift */; };
+		FA44858A1DB29B3000DB4B2B /* img_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4485881DB29B3000DB4B2B /* img_1.png */; };
+		FA44858B1DB29B3000DB4B2B /* img_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4485891DB29B3000DB4B2B /* img_2.png */; };
 		FA4539B31DB22DC2007789D7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4539B21DB22DC2007789D7 /* MapViewController.swift */; };
 		FA4539B51DB2362F007789D7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4539B41DB2362F007789D7 /* DetailViewController.swift */; };
 		FA4539B71DB2369E007789D7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4539B61DB2369E007789D7 /* MapKit.framework */; };
@@ -72,6 +74,8 @@
 		FA1C74451DB21F5D0079C7B1 /* Dataset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
 		FA1C74471DB220880079C7B1 /* Plate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plate.swift; sourceTree = "<group>"; };
 		FA1C74491DB222BB0079C7B1 /* DatasetAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatasetAPI.swift; sourceTree = "<group>"; };
+		FA4485881DB29B3000DB4B2B /* img_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_1.png; sourceTree = "<group>"; };
+		FA4485891DB29B3000DB4B2B /* img_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_2.png; sourceTree = "<group>"; };
 		FA4539B21DB22DC2007789D7 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FA4539B41DB2362F007789D7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FA4539B61DB2369E007789D7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -132,6 +136,7 @@
 			children = (
 				FA1C742E1DB219020079C7B1 /* CHANGELOG */,
 				FA4539C11DB259A5007789D7 /* README.md */,
+				FA4485871DB29B3000DB4B2B /* Screenshots */,
 				FA1C74191DB2180E0079C7B1 /* Changes */,
 				FA1C74361DB21A540079C7B1 /* ChangesKit */,
 				FA1C74181DB2180E0079C7B1 /* Products */,
@@ -217,6 +222,15 @@
 				FA1C74381DB21A540079C7B1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA4485871DB29B3000DB4B2B /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				FA4485881DB29B3000DB4B2B /* img_1.png */,
+				FA4485891DB29B3000DB4B2B /* img_2.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 		FA4539BC1DB23B8B007789D7 /* Annotations */ = {
@@ -338,7 +352,9 @@
 			files = (
 				FA1C74251DB2180E0079C7B1 /* LaunchScreen.storyboard in Resources */,
 				FA1C74221DB2180E0079C7B1 /* Assets.xcassets in Resources */,
+				FA44858B1DB29B3000DB4B2B /* img_2.png in Resources */,
 				FA1C74201DB2180E0079C7B1 /* Main.storyboard in Resources */,
+				FA44858A1DB29B3000DB4B2B /* img_1.png in Resources */,
 				FA4539C01DB24E87007789D7 /* Plate.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
