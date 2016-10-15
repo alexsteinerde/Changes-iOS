@@ -10,11 +10,11 @@ import Foundation
 import CoreLocation
 
 public class Plate : Dataset {
-    var name: String
-    var deportationDate: Date?
-    var deportationDestination: String?
-    var deathDate: Date?
-    var deathPlace: String?
+    public var name: String
+    public var deportationDate: Date?
+    public var deportationDestination: String?
+    public var deathDate: Date?
+    public var deathPlace: String?
     
     init(name: String, deportationDate: Date, deportationDestination: String, deathDate: Date, deathPlace:String,  coordinate: CLLocationCoordinate2D) {
         self.name = name

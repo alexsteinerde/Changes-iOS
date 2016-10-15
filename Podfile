@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'Changes' do
     pod 'Alamofire'
+    pod 'Pulley'
 end
 
 target 'ChangesKit' do

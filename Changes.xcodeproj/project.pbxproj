@@ -21,6 +21,11 @@
 		FA1C74481DB220890079C7B1 /* Plate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C74471DB220880079C7B1 /* Plate.swift */; };
 		FA1C744A1DB222BB0079C7B1 /* DatasetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C74491DB222BB0079C7B1 /* DatasetAPI.swift */; };
 		FA4539B31DB22DC2007789D7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4539B21DB22DC2007789D7 /* MapViewController.swift */; };
+		FA4539B51DB2362F007789D7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4539B41DB2362F007789D7 /* DetailViewController.swift */; };
+		FA4539B71DB2369E007789D7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4539B61DB2369E007789D7 /* MapKit.framework */; };
+		FA4539BB1DB23855007789D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4539BA1DB23855007789D7 /* HomeViewController.swift */; };
+		FA4539BE1DB23BA6007789D7 /* PlateAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4539BD1DB23BA6007789D7 /* PlateAnnotation.swift */; };
+		FA4539C01DB24E87007789D7 /* Plate.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4539BF1DB24E87007789D7 /* Plate.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		FA1C74471DB220880079C7B1 /* Plate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plate.swift; sourceTree = "<group>"; };
 		FA1C74491DB222BB0079C7B1 /* DatasetAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatasetAPI.swift; sourceTree = "<group>"; };
 		FA4539B21DB22DC2007789D7 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FA4539B41DB2362F007789D7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FA4539B61DB2369E007789D7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FA4539BA1DB23855007789D7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FA4539BD1DB23BA6007789D7 /* PlateAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlateAnnotation.swift; sourceTree = "<group>"; };
+		FA4539BF1DB24E87007789D7 /* Plate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plate.png; sourceTree = "<group>"; };
 		FC9E1A75B6888A9A7669548D /* Pods-ChangesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChangesKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChangesKit/Pods-ChangesKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1C743C1DB21A540079C7B1 /* ChangesKit.framework in Frameworks */,
+				FA4539B71DB2369E007789D7 /* MapKit.framework in Frameworks */,
 				665F1296B14952B0BF30D677 /* Pods_Changes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +105,7 @@
 		5B30A5C676AABC6689E3C950 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA4539B61DB2369E007789D7 /* MapKit.framework */,
 				104A3F173070FC40DFBBCD86 /* Pods_Changes.framework */,
 				27F2C77B19725820FFC88BA3 /* Pods_ChangesKit.framework */,
 			);
@@ -146,7 +158,10 @@
 		FA1C742C1DB218DF0079C7B1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FA4539BA1DB23855007789D7 /* HomeViewController.swift */,
 				FA4539B21DB22DC2007789D7 /* MapViewController.swift */,
+				FA4539B41DB2362F007789D7 /* DetailViewController.swift */,
+				FA4539BC1DB23B8B007789D7 /* Annotations */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -157,6 +172,7 @@
 				FA1C74211DB2180E0079C7B1 /* Assets.xcassets */,
 				FA1C74231DB2180E0079C7B1 /* LaunchScreen.storyboard */,
 				FA1C74261DB2180E0079C7B1 /* Info.plist */,
+				FA4539BF1DB24E87007789D7 /* Plate.png */,
 			);
 			name = "Supporing Files";
 			sourceTree = "<group>";
@@ -195,6 +211,14 @@
 				FA1C74381DB21A540079C7B1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA4539BC1DB23B8B007789D7 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				FA4539BD1DB23BA6007789D7 /* PlateAnnotation.swift */,
+			);
+			path = Annotations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +291,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = ZZ5Z6PAX4F;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					FA1C74341DB21A540079C7B1 = {
 						CreatedOnToolsVersion = 8.0;
@@ -304,6 +333,7 @@
 				FA1C742F1DB219020079C7B1 /* CHANGELOG in Resources */,
 				FA1C74221DB2180E0079C7B1 /* Assets.xcassets in Resources */,
 				FA1C74201DB2180E0079C7B1 /* Main.storyboard in Resources */,
+				FA4539C01DB24E87007789D7 /* Plate.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,8 +429,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4539B51DB2362F007789D7 /* DetailViewController.swift in Sources */,
 				FA1C741B1DB2180E0079C7B1 /* AppDelegate.swift in Sources */,
+				FA4539BE1DB23BA6007789D7 /* PlateAnnotation.swift in Sources */,
 				FA4539B31DB22DC2007789D7 /* MapViewController.swift in Sources */,
+				FA4539BB1DB23855007789D7 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

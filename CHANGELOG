@@ -19,3 +19,9 @@ Version 1.0 (4)
 - Added testing if requesting a list for a bounding box suceess
 - Changed some values of plate object to optional
 - Improved parsing plate json object
+
+Version 1.0 (5)
+- Added pulley library
+- Added maps
+- Added showing markers on map
+- Added showing details of plate in detail view

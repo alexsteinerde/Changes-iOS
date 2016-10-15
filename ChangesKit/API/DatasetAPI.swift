@@ -14,7 +14,7 @@ class DatasetAPI {
     private static let serverURL = "https://changes.plantio.de"
     
     class func requestData(forBounding box: BoundingBox, completion: @escaping (_ data: Array<Dataset>)->Void) {
-        Alamofire.request(serverURL + "/get?leftLat=\(box.latLeft)&leftLong=\(box.longLeft)&rightLat=\(box.longLeft)&rightLong=\(box.longRight)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
+        Alamofire.request(serverURL + "/get?leftLat=\(box.latLeft)&leftLong=\(box.longLeft)&rightLat=\(box.latRight)&rightLong=\(box.longRight)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
             guard let JSON = response.result.value as? Dictionary<String, Any>, let answer = JSON["answer"] as? Array<Dictionary<String, Any>> else { return completion([]) }
             var datasets = Array<Dataset>()
             for data in answer {
