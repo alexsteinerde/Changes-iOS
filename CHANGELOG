@@ -3,3 +3,9 @@ Version 1.0 (1)
 - Added framework target
 - Added structure
 - Installed Alamofire pod
+
+Verison 2.0 (2)
+- Added dataset class
+- Added child class plate
+- Added dataset api
+- Added initalisation method for parsing json data to dataset and plate object

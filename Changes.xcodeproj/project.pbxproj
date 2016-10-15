@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000FDC6922432748F2FF0212 /* Pods_ChangesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F2C77B19725820FFC88BA3 /* Pods_ChangesKit.framework */; };
 		665F1296B14952B0BF30D677 /* Pods_Changes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104A3F173070FC40DFBBCD86 /* Pods_Changes.framework */; };
 		FA1C741B1DB2180E0079C7B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C741A1DB2180E0079C7B1 /* AppDelegate.swift */; };
 		FA1C74201DB2180E0079C7B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1C741E1DB2180E0079C7B1 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 		FA1C74391DB21A540079C7B1 /* ChangesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1C74371DB21A540079C7B1 /* ChangesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA1C743C1DB21A540079C7B1 /* ChangesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1C74351DB21A540079C7B1 /* ChangesKit.framework */; };
 		FA1C743D1DB21A540079C7B1 /* ChangesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA1C74351DB21A540079C7B1 /* ChangesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA1C74461DB21F5D0079C7B1 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C74451DB21F5D0079C7B1 /* Dataset.swift */; };
+		FA1C74481DB220890079C7B1 /* Plate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C74471DB220880079C7B1 /* Plate.swift */; };
+		FA1C744A1DB222BB0079C7B1 /* DatasetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C74491DB222BB0079C7B1 /* DatasetAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		104A3F173070FC40DFBBCD86 /* Pods_Changes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Changes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F2C77B19725820FFC88BA3 /* Pods_ChangesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChangesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		288D55067AC03D7C3F7F32D2 /* Pods-ChangesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChangesKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChangesKit/Pods-ChangesKit.release.xcconfig"; sourceTree = "<group>"; };
 		8E06BEB9479A30EF4F9B3E48 /* Pods-Changes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Changes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Changes/Pods-Changes.release.xcconfig"; sourceTree = "<group>"; };
 		D4C494CB1627D01DB78CC398 /* Pods-Changes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Changes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Changes/Pods-Changes.debug.xcconfig"; sourceTree = "<group>"; };
 		FA1C74171DB2180E0079C7B1 /* Changes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Changes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +62,10 @@
 		FA1C74351DB21A540079C7B1 /* ChangesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChangesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1C74371DB21A540079C7B1 /* ChangesKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangesKit.h; sourceTree = "<group>"; };
 		FA1C74381DB21A540079C7B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA1C74451DB21F5D0079C7B1 /* Dataset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		FA1C74471DB220880079C7B1 /* Plate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plate.swift; sourceTree = "<group>"; };
+		FA1C74491DB222BB0079C7B1 /* DatasetAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatasetAPI.swift; sourceTree = "<group>"; };
+		FC9E1A75B6888A9A7669548D /* Pods-ChangesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChangesKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChangesKit/Pods-ChangesKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000FDC6922432748F2FF0212 /* Pods_ChangesKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				104A3F173070FC40DFBBCD86 /* Pods_Changes.framework */,
+				27F2C77B19725820FFC88BA3 /* Pods_ChangesKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,6 +103,8 @@
 			children = (
 				D4C494CB1627D01DB78CC398 /* Pods-Changes.debug.xcconfig */,
 				8E06BEB9479A30EF4F9B3E48 /* Pods-Changes.release.xcconfig */,
+				FC9E1A75B6888A9A7669548D /* Pods-ChangesKit.debug.xcconfig */,
+				288D55067AC03D7C3F7F32D2 /* Pods-ChangesKit.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -147,8 +161,8 @@
 		FA1C74361DB21A540079C7B1 /* ChangesKit */ = {
 			isa = PBXGroup;
 			children = (
-				FA1C74421DB21A710079C7B1 /* API */,
 				FA1C74431DB21A710079C7B1 /* Model */,
+				FA1C74421DB21A710079C7B1 /* API */,
 				FA1C74441DB21A740079C7B1 /* Supporting Files */,
 			);
 			path = ChangesKit;
@@ -157,6 +171,7 @@
 		FA1C74421DB21A710079C7B1 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				FA1C74491DB222BB0079C7B1 /* DatasetAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -164,6 +179,8 @@
 		FA1C74431DB21A710079C7B1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA1C74451DB21F5D0079C7B1 /* Dataset.swift */,
+				FA1C74471DB220880079C7B1 /* Plate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,10 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA1C743E1DB21A540079C7B1 /* Build configuration list for PBXNativeTarget "ChangesKit" */;
 			buildPhases = (
+				2EF61BAD099C0A2E06C8B6FD /* [CP] Check Pods Manifest.lock */,
 				FA1C74301DB21A540079C7B1 /* Sources */,
 				FA1C74311DB21A540079C7B1 /* Frameworks */,
 				FA1C74321DB21A540079C7B1 /* Headers */,
 				FA1C74331DB21A540079C7B1 /* Resources */,
+				C85BED9B223A9187A598D669 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +268,7 @@
 					FA1C74341DB21A540079C7B1 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = ZZ5Z6PAX4F;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -294,6 +314,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2EF61BAD099C0A2E06C8B6FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		646E54DEC05856D17B855793 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +357,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C85BED9B223A9187A598D669 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChangesKit/Pods-ChangesKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EBD3DEB96A0DF70738136D01 /* [CP] Embed Pods Frameworks */ = {
@@ -354,6 +404,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1C74481DB220890079C7B1 /* Plate.swift in Sources */,
+				FA1C74461DB21F5D0079C7B1 /* Dataset.swift in Sources */,
+				FA1C744A1DB222BB0079C7B1 /* DatasetAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,7 +565,9 @@
 		};
 		FA1C743F1DB21A540079C7B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9E1A75B6888A9A7669548D /* Pods-ChangesKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -526,6 +581,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.ChangesKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -535,7 +591,9 @@
 		};
 		FA1C74401DB21A540079C7B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 288D55067AC03D7C3F7F32D2 /* Pods-ChangesKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
