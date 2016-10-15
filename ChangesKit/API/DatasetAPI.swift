@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import AlamofireImage
 
 class DatasetAPI {
     
@@ -23,8 +24,19 @@ class DatasetAPI {
                         datasets.append(plate)
                     }
                 }
+                else if data["type"] as? String == "building" {
+                    if let building = Building(data: data) {
+                        datasets.append(building)
+                    }
+                }
             }
             completion(datasets)
+        }
+    }
+    
+    class func requestImage(withURL: String, completion:@escaping (_ image: UIImage?)->Void) {
+        Alamofire.request(serverURL + withURL).responseImage { (response) in
+            completion(response.result.value)
         }
     }
 }

@@ -17,10 +17,9 @@ public class Dataset {
     }
     
     init?(data: Dictionary<String, Any>) {
-        guard let latString = data["lat"] as? String,
-            let lat = Double(latString),
-            let longString = data["long"] as? String,
-            let long = Double(longString) else { return nil }
+        guard let lat = data["lat"] as? Double,
+            let long = data["long"] as? Double
+            else { return nil }
         
         self.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
     }

@@ -26,6 +26,10 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
                 label.text = plate.name
                 tableView.reloadData()
             }
+            else if let building = dataset as? Building {
+                label.text = String(building.year)
+                tableView.reloadData()
+            }
         }
     }
     
@@ -58,7 +62,15 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        if dataset is Plate {
+            return 2
+        }
+        else if dataset is Building {
+            return 2
+        }
+        else {
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -80,6 +92,25 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
                 break
             }
         }
+        else if let building = dataset as? Building {
+            switch indexPath.row {
+            case 0:
+                cell.textLabel?.text = String(building.year)
+                cell.detailTextLabel?.text = "Year"
+            case 1:
+                let cell = UITableViewCell()
+                let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: tableView.frame.width))
+                cell.backgroundColor = UIColor.clear
+                cell.addSubview(imageView)
+                building.fetchImage(completion: { (image) in
+                    imageView.image = image
+                })
+                imageView.contentMode = .scaleAspectFit
+                return cell
+            default:
+                break
+            }
+        }
         else {
             cell.textLabel?.text = nil
             cell.detailTextLabel?.text = nil
@@ -88,7 +119,15 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 66
+        if dataset is Plate {
+            return 66
+        }
+        else if dataset is Building {
+            return (indexPath.row == 0 ? 66 : tableView.frame.width)
+        }
+        else {
+            return 44
+        }
     }
     
 }

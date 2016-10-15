@@ -25,3 +25,11 @@ Version 1.0 (5)
 - Added maps
 - Added showing markers on map
 - Added showing details of plate in detail view
+
+Version 1.0 (6)
+- Added readme file
+- Installed alamofire image extension
+- Added building model
+- Added parsing buildings
+- Added fetching images for buildings
+- Added showing buildings on map and in detail view

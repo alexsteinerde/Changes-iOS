@@ -13,7 +13,6 @@
 		FA1C74201DB2180E0079C7B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1C741E1DB2180E0079C7B1 /* Main.storyboard */; };
 		FA1C74221DB2180E0079C7B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1C74211DB2180E0079C7B1 /* Assets.xcassets */; };
 		FA1C74251DB2180E0079C7B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1C74231DB2180E0079C7B1 /* LaunchScreen.storyboard */; };
-		FA1C742F1DB219020079C7B1 /* CHANGELOG in Resources */ = {isa = PBXBuildFile; fileRef = FA1C742E1DB219020079C7B1 /* CHANGELOG */; };
 		FA1C74391DB21A540079C7B1 /* ChangesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1C74371DB21A540079C7B1 /* ChangesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA1C743C1DB21A540079C7B1 /* ChangesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1C74351DB21A540079C7B1 /* ChangesKit.framework */; };
 		FA1C743D1DB21A540079C7B1 /* ChangesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA1C74351DB21A540079C7B1 /* ChangesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -26,6 +25,8 @@
 		FA4539BB1DB23855007789D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4539BA1DB23855007789D7 /* HomeViewController.swift */; };
 		FA4539BE1DB23BA6007789D7 /* PlateAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4539BD1DB23BA6007789D7 /* PlateAnnotation.swift */; };
 		FA4539C01DB24E87007789D7 /* Plate.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4539BF1DB24E87007789D7 /* Plate.png */; };
+		FA4539C41DB262EF007789D7 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4539C31DB262EF007789D7 /* Building.swift */; };
+		FA4539C61DB2660F007789D7 /* BuildingAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4539C51DB2660E007789D7 /* BuildingAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,9 @@
 		FA4539BA1DB23855007789D7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA4539BD1DB23BA6007789D7 /* PlateAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlateAnnotation.swift; sourceTree = "<group>"; };
 		FA4539BF1DB24E87007789D7 /* Plate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plate.png; sourceTree = "<group>"; };
+		FA4539C11DB259A5007789D7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FA4539C31DB262EF007789D7 /* Building.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		FA4539C51DB2660E007789D7 /* BuildingAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingAnnotation.swift; sourceTree = "<group>"; };
 		FC9E1A75B6888A9A7669548D /* Pods-ChangesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChangesKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChangesKit/Pods-ChangesKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				FA1C742E1DB219020079C7B1 /* CHANGELOG */,
+				FA4539C11DB259A5007789D7 /* README.md */,
 				FA1C74191DB2180E0079C7B1 /* Changes */,
 				FA1C74361DB21A540079C7B1 /* ChangesKit */,
 				FA1C74181DB2180E0079C7B1 /* Products */,
@@ -200,6 +205,7 @@
 			children = (
 				FA1C74451DB21F5D0079C7B1 /* Dataset.swift */,
 				FA1C74471DB220880079C7B1 /* Plate.swift */,
+				FA4539C31DB262EF007789D7 /* Building.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				FA4539BD1DB23BA6007789D7 /* PlateAnnotation.swift */,
+				FA4539C51DB2660E007789D7 /* BuildingAnnotation.swift */,
 			);
 			path = Annotations;
 			sourceTree = "<group>";
@@ -330,7 +337,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1C74251DB2180E0079C7B1 /* LaunchScreen.storyboard in Resources */,
-				FA1C742F1DB219020079C7B1 /* CHANGELOG in Resources */,
 				FA1C74221DB2180E0079C7B1 /* Assets.xcassets in Resources */,
 				FA1C74201DB2180E0079C7B1 /* Main.storyboard in Resources */,
 				FA4539C01DB24E87007789D7 /* Plate.png in Resources */,
@@ -433,6 +439,7 @@
 				FA1C741B1DB2180E0079C7B1 /* AppDelegate.swift in Sources */,
 				FA4539BE1DB23BA6007789D7 /* PlateAnnotation.swift in Sources */,
 				FA4539B31DB22DC2007789D7 /* MapViewController.swift in Sources */,
+				FA4539C61DB2660F007789D7 /* BuildingAnnotation.swift in Sources */,
 				FA4539BB1DB23855007789D7 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +451,7 @@
 				FA1C74481DB220890079C7B1 /* Plate.swift in Sources */,
 				FA1C74461DB21F5D0079C7B1 /* Dataset.swift in Sources */,
 				FA1C744A1DB222BB0079C7B1 /* DatasetAPI.swift in Sources */,
+				FA4539C41DB262EF007789D7 /* Building.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
