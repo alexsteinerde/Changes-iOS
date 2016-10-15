@@ -13,3 +13,9 @@ Verison 1.0 (2)
 Version 1.0 (3)
 - Added parsing reponse from api
 - Added returning list of data sets after parsing
+
+Version 1.0 (4)
+- Added inital view controller
+- Added testing if requesting a list for a bounding box suceess
+- Changed some values of plate object to optional
+- Improved parsing plate json object

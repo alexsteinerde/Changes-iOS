@@ -11,10 +11,10 @@ import CoreLocation
 
 public class Plate : Dataset {
     var name: String
-    var deportationDate: Date
-    var deportationDestination: String
-    var deathDate: Date
-    var deathPlace: String
+    var deportationDate: Date?
+    var deportationDestination: String?
+    var deathDate: Date?
+    var deathPlace: String?
     
     init(name: String, deportationDate: Date, deportationDestination: String, deathDate: Date, deathPlace:String,  coordinate: CLLocationCoordinate2D) {
         self.name = name
@@ -27,20 +27,20 @@ public class Plate : Dataset {
     
     override init?(data: Dictionary<String, Any>) {
         guard let optional = data["data"] as? Dictionary<String, Any>,
-            let name = optional["name"] as? String,
-            let deportationDateString = optional["deportationDate"] as? String,
-            let deportationDate = Plate.parseDate(ofString: deportationDateString),
-            let deportationDestination = optional["deportationDestination"] as? String,
-            let deathDateString = optional["deathDate"] as? String,
-            let deathDate = Plate.parseDate(ofString: deathDateString),
-            let deathPlace = optional["deathPlace"] as? String
+            let name = optional["name"] as? String
             else { return nil }
         self.name = name
-        self.deportationDate = deportationDate
-        self.deportationDestination = deportationDestination
-        self.deathDate = deathDate
-        self.deathPlace = deathPlace
         
+        if let deportationDateString = optional["deportationDate"] as? String {
+            self.deportationDate = Plate.parseDate(ofString: deportationDateString)
+        }
+        self.deportationDestination = optional["deportationDestination"] as? String
+        
+        if let deathDateString = optional["deathDate"] as? String {
+            self.deathDate = Plate.parseDate(ofString: deathDateString)
+        }
+        self.deportationDestination = optional["deathPlace"] as? String
+
         super.init(data: data)
     }
     

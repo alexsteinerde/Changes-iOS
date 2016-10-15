@@ -20,6 +20,7 @@
 		FA1C74461DB21F5D0079C7B1 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C74451DB21F5D0079C7B1 /* Dataset.swift */; };
 		FA1C74481DB220890079C7B1 /* Plate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C74471DB220880079C7B1 /* Plate.swift */; };
 		FA1C744A1DB222BB0079C7B1 /* DatasetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C74491DB222BB0079C7B1 /* DatasetAPI.swift */; };
+		FA4539B31DB22DC2007789D7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4539B21DB22DC2007789D7 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		FA1C74451DB21F5D0079C7B1 /* Dataset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
 		FA1C74471DB220880079C7B1 /* Plate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plate.swift; sourceTree = "<group>"; };
 		FA1C74491DB222BB0079C7B1 /* DatasetAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatasetAPI.swift; sourceTree = "<group>"; };
+		FA4539B21DB22DC2007789D7 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FC9E1A75B6888A9A7669548D /* Pods-ChangesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChangesKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChangesKit/Pods-ChangesKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +146,7 @@
 		FA1C742C1DB218DF0079C7B1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FA4539B21DB22DC2007789D7 /* MapViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1C741B1DB2180E0079C7B1 /* AppDelegate.swift in Sources */,
+				FA4539B31DB22DC2007789D7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

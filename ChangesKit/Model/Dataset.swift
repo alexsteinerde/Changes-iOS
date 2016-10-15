@@ -20,4 +20,8 @@ public class Dataset {
         guard let lat = data["lat"] as? Double, let long = data["long"] as? Double else { return nil }
         self.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
     }
+    
+    public class func requestAll(forBoundingBox boundingBox: BoundingBox, completion:@escaping (_ datasets: Array<Dataset>)->Void) {
+        DatasetAPI.requestData(forBounding: boundingBox, completion: completion)
+    }
 }
